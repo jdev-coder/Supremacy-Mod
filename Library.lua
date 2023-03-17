@@ -874,7 +874,7 @@ function framework:createWindow(args)
             dropdown:select(dropdown.value)
 
             function dropdown:open()
-                framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://github.com/jdev-coder/Supremacy-Mod/raw/main/cringe.png/triangle2down.png"})
+                framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://github.com/jdev-coder/Supremacy-Mod/raw/main/triangle2down.png"})
                 for i,v in next, dropdown.options do
                     dropdown.content[i.."Ring"] = framework("draw", {class = "Square", offset = {nVector2(0,0), dropdown.drawings.ring0}, properties = {
                         Size = framework("udim", {type = "size", xScale = 0, xOffset = 155, yScale = 0, yOffset = 20, relativeFrom = dropdown.drawings.ring0}),
