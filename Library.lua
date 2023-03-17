@@ -37,9 +37,9 @@ local framework = {
     notifications = {},
     labels = {},
     theme = {
-        accent = nHSV(28,100,99),
+        accent = nHSV(0,102,255),
         font = Drawing.Fonts.Plex,
-        fontSize = 13
+        fontSize = 11
     },
     menu = {
         open = true,
@@ -57,7 +57,7 @@ local framework = {
         currentDropdown = nil,
         keybinds = {},
         reservedKeybinds = {
-            menuKey = Enum.KeyCode.Home,
+            menuKey = Enum.KeyCode.RightShift,
             panicKey = Enum.KeyCode.End
         },
         flags = {},
@@ -277,7 +277,7 @@ function framework:createWindow(args)
     
     window.ring0 = self("draw", {class = "Square", offset = {nVector2(0,0)}, properties = {
         Size = window.size,
-        Position = nVector2(screenCenter.X - window.size.X/2, screenCenter.Y - window.size.Y/2),
+        Position = nVector2(600, 675),
         Filled = true,
         Visible = self.menu.open,
         Transparency = 1,
