@@ -25,6 +25,11 @@ local nDrawing = Drawing.new
 local screenSize = nVector2(currentCamera.ViewportSize.X, currentCamera.ViewportSize.Y) -- Screen
 local screenCenter = nVector2(currentCamera.ViewportSize.X/2, currentCamera.ViewportSize.Y/2)
 
+game:GetService("RunService").Stepped:Connect(function()
+    local screenSize = nVector2(currentCamera.ViewportSize.X, currentCamera.ViewportSize.Y) -- Screen
+    local screenCenter = nVector2(currentCamera.ViewportSize.X/2, currentCamera.ViewportSize.Y/2)
+end)
+
 local frameworkHook
 local framework = {
     connections = {},
