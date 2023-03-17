@@ -1172,10 +1172,5 @@ function framework:createScreenLabel(args)
     return screenLabel
 end
 
-local watermark = framework:createScreenLabel{text = "YUKIHOOK | " .. os.date("%X") .. " | YUKINO"}
-local watermarkConnection = framework("createConnection", {name = "watermark", connection = RunService.Heartbeat, callback = function()
-    watermark:changeText("YUKIHOOK | " .. os.date("%X") .. " | YUKINO")
-end})
-
 framework("initialize")
 return framework
