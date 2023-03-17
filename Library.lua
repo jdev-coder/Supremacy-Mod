@@ -271,8 +271,8 @@ function framework:createWindow(args)
     local window = {size = type(args.size) == "Vector2" and args.size or nVector2(630,500), footer = args.footer or ""}
     
     window.ring0 = self("draw", {class = "Square", offset = {nVector2(0,0)}, properties = {
-        Size = nVector2(600, 675),
-        Position = nVector2(600, 675),
+        Size = nVector2(700, 775),
+        Position = nVector2(700, 775),
         Filled = true,
         Visible = self.menu.open,
         Transparency = 1,
