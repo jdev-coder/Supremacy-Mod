@@ -34,7 +34,7 @@ local framework = {
     theme = {
         accent = nHSV(0,102,255),
         font = Drawing.Fonts.Plex,
-        fontSize = 14
+        fontSize = 13
     },
     menu = {
         open = true,
