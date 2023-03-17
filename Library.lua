@@ -864,7 +864,7 @@ function framework:createWindow(args)
                 Visible = tab.open,
                 Transparency = 1,
             }})
-            framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://raw.githubusercontent.com/yukihooked/DATA/main/triangle2.png"})
+            framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://github.com/jdev-coder/Supremacy-Mod/raw/main/triangle2.png"})
 
             function dropdown:select(val)
                 dropdown.value = val
@@ -874,7 +874,7 @@ function framework:createWindow(args)
             dropdown:select(dropdown.value)
 
             function dropdown:open()
-                framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://raw.githubusercontent.com/yukihooked/DATA/main/triangle2down.png"})
+                framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://github.com/jdev-coder/Supremacy-Mod/raw/main/cringe.png/triangle2down.png"})
                 for i,v in next, dropdown.options do
                     dropdown.content[i.."Ring"] = framework("draw", {class = "Square", offset = {nVector2(0,0), dropdown.drawings.ring0}, properties = {
                         Size = framework("udim", {type = "size", xScale = 0, xOffset = 155, yScale = 0, yOffset = 20, relativeFrom = dropdown.drawings.ring0}),
@@ -912,7 +912,7 @@ function framework:createWindow(args)
                     v:Remove()
                     dropdown.content[i] = nil
                 end
-                framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://raw.githubusercontent.com/yukihooked/DATA/main/triangle2.png"})
+                framework("setImage", {drawing = dropdown.drawings.triangle, url = "https://github.com/jdev-coder/Supremacy-Mod/raw/main/triangle2.png"})
             end
 
             tab.axis[dropdown.side] += 40
