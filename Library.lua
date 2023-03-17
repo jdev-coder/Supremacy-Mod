@@ -25,11 +25,6 @@ local nDrawing = Drawing.new
 local screenSize = nVector2(currentCamera.ViewportSize.X, currentCamera.ViewportSize.Y) -- Screen
 local screenCenter = nVector2(currentCamera.ViewportSize.X/2, currentCamera.ViewportSize.Y/2)
 
-game:GetService("RunService").Stepped:Connect(function()
-    screenSize = nVector2(currentCamera.ViewportSize.X, currentCamera.ViewportSize.Y) -- Screen
-    screenCenter = nVector2(currentCamera.ViewportSize.X/2, currentCamera.ViewportSize.Y/2)
-end)
-
 local frameworkHook
 local framework = {
     connections = {},
@@ -39,7 +34,7 @@ local framework = {
     theme = {
         accent = nHSV(0,102,255),
         font = Drawing.Fonts.Plex,
-        fontSize = 11
+        fontSize = 14
     },
     menu = {
         open = true,
